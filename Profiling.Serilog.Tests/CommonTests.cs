@@ -9,19 +9,9 @@ using Xunit;
 
 namespace Profiling.Serilog.Tests
 {
-    public class CommonTests
+    public partial class CommonTests
     {
         private readonly TestSink _testSink;
-
-        private class TestSink : ILogEventSink
-        {
-            public List<LogEvent> LogEvents { get; set; } = new List<LogEvent>();
-
-            public void Emit(LogEvent logEvent)
-            {
-                LogEvents.Add(logEvent);
-            }
-        }
 
         public CommonTests()
         {
@@ -32,12 +22,10 @@ namespace Profiling.Serilog.Tests
         }
 
         [Fact]
-        public void OneStepExecute_ShouldExactlyOneEventWithMessage()
+        public void OneStepExecute_ShouldExactlyOneLogEventWithMessage()
         {
             var mp = MiniProfiler.Start();
-
             mp.Step("SimpleStep");
-
             MiniProfiler.Stop();
 
             _testSink.LogEvents.Should().HaveCount(1);
@@ -50,6 +38,34 @@ namespace Profiling.Serilog.Tests
 
             var properties = logEvent.Properties["MiniProfiler"];
             properties.ToString().Should().Contain("SimpleStep");
+        }
+
+        [Fact]
+        public void TwoStepExecute_ShouldTwoLogEventsSendToSink()
+        {
+            StartOneStep();
+            StartOneStep();
+
+            _testSink.LogEvents.Should().HaveCount(2);
+        }
+
+        [Fact]
+        public void LogLevelIsInfo_ProfileByDebug_ZeroLogEventsSendsToSink()
+        {
+            var logger = new LoggerConfiguration().AddMiniProfiler().WriteTo.Sink(_testSink).MinimumLevel.Information().CreateLogger();
+
+            MiniProfilerLog.SetUpSerilog(logger, LogEventLevel.Debug);
+            StartOneStep();
+
+            _testSink.LogEvents.Should().HaveCount(0);
+        }
+
+
+        private static void StartOneStep()
+        {
+            MiniProfiler.Start();
+            MiniProfiler.StepStatic("Step");
+            MiniProfiler.Stop();
         }
     }
 }
