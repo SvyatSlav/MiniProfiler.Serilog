@@ -7,6 +7,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiling.Serilog", "MiniPr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiling.Serilog.Tests", "Profiling.Serilog.Tests\Profiling.Serilog.Tests.csproj", "{308BCCF4-BC32-4CBE-801F-E082DEA97F78}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A500CB56-EF6A-481B-AB6D-8083757E1C76}"
+	ProjectSection(SolutionItems) = preProject
+		Profiling.Serilog.nuspec = Profiling.Serilog.nuspec
+		README.md = README.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
