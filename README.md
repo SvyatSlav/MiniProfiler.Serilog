@@ -2,7 +2,7 @@
 
 MiniProfiler Extension allows save results into <a href="https://serilog.net/" target="_blank">Serilog</a>
 
-Inspired by <a href="https://github.com/SvyatSlav/MiniProfiler.Log4Net" target="_blank">MiniProfiler.Log4Net</a> and  Dave Glick [post](https://daveaglick.com/posts/easy-performance-and-query-logging-in-aspnet-with-serilog-and-miniprofiler)
+Inspired by <a href="https://github.com/SvyatSlav/MiniProfiler.Log4Net" target="_blank">MiniProfiler.Log4Net</a> and  Dave Glick's [post](https://daveaglick.com/posts/easy-performance-and-query-logging-in-aspnet-with-serilog-and-miniprofiler)
 
 ## Install from Nuget
 
