@@ -25,4 +25,4 @@ And than setup Miniprofiler with serilog's Logger
  
 And this all what you need!
 
-Use Profiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 
+Use MiniProfiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 
