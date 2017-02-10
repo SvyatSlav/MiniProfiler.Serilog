@@ -22,13 +22,13 @@ And than setup Miniprofiler with serilog's Logger
 
 ```cSharp
  MiniProfilerLog.SetUpSerilog();
- ```
- 
+ ``` 
 And this all what you need!
+Use MiniProfiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 
 
-### Result examples
+### Results example
 In Seq:
 
 [![seq.png](https://s27.postimg.org/afz0v4lg3/screen.png)](https://postimg.org/image/hj6waqqvj/)
 
-Use MiniProfiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 
+
