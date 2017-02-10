@@ -24,6 +24,7 @@ And than setup Miniprofiler with serilog's Logger
  MiniProfilerLog.SetUpSerilog();
  ``` 
 And this all what you need!
+
 Use MiniProfiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 
 
 ### Results example
