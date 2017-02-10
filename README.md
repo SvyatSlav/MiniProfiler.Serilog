@@ -14,15 +14,20 @@ Inspired by <a href="https://github.com/SvyatSlav/MiniProfiler.Log4Net" target="
 Setup Serilog:
 
 ```cSharp
-new LoggerConfiguration().AddMiniProfiler() ...;
+Log.Logger = new LoggerConfiguration().AddMiniProfiler() ...;
 ```
 
 And than setup Miniprofiler with serilog's Logger
 
 ```cSharp
- MiniProfilerLog.SetUpSerilog(Log.Logger);
+ MiniProfilerLog.SetUpSerilog();
  ```
  
 And this all what you need!
+
+### Result examples
+In Seq:
+
+[![seq.png](https://s27.postimg.org/afz0v4lg3/screen.png)](https://postimg.org/image/hj6waqqvj/)
 
 Use MiniProfiler as usual (see [MiniProfiler site](http://miniprofiler.com/)) 

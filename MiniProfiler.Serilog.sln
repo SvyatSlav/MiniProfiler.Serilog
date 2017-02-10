@@ -9,9 +9,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Profiling.Serilog.Tests", "
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A500CB56-EF6A-481B-AB6D-8083757E1C76}"
 	ProjectSection(SolutionItems) = preProject
-		Profiling.Serilog.nuspec = Profiling.Serilog.nuspec
+		MiniProfiler.Serilog\Profiling.Serilog.nuspec = MiniProfiler.Serilog\Profiling.Serilog.nuspec
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{F186A3CB-088D-48AC-B116-870DA3A0A044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Console", "Samples\Sample.Console\Sample.Console.csproj", "{747F3A3F-AA88-4100-A227-3B4579448870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +31,15 @@ Global
 		{308BCCF4-BC32-4CBE-801F-E082DEA97F78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{308BCCF4-BC32-4CBE-801F-E082DEA97F78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{308BCCF4-BC32-4CBE-801F-E082DEA97F78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{747F3A3F-AA88-4100-A227-3B4579448870}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{747F3A3F-AA88-4100-A227-3B4579448870}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{747F3A3F-AA88-4100-A227-3B4579448870}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{747F3A3F-AA88-4100-A227-3B4579448870}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{747F3A3F-AA88-4100-A227-3B4579448870} = {F186A3CB-088D-48AC-B116-870DA3A0A044}
 	EndGlobalSection
 EndGlobal
