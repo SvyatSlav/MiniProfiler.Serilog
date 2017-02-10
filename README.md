@@ -1,4 +1,5 @@
 # MiniProfiler.Serilog
+[![Build status](https://ci.appveyor.com/api/projects/status/2txsie0u4ek676id?svg=true)](https://ci.appveyor.com/project/SvyatSlav/miniprofiler-serilog)
 
 MiniProfiler Extension allows save results into <a href="https://serilog.net/" target="_blank">Serilog</a>
 
