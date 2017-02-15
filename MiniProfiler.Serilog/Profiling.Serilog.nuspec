@@ -5,7 +5,7 @@
     <version>1.0.2</version>
     <authors>SvyatSlav</authors>
     <owners>SvyatSlav</owners>
-    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0</licenseUrl>
+    <licenseUrl>https://github.com/SvyatSlav/MiniProfiler.Serilog/blob/master/LICENCE</licenseUrl>
     <projectUrl>https://github.com/SvyatSlav/MiniProfiler.Serilog</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>MiniProfiler Extension allows save results into Serilog</description>
